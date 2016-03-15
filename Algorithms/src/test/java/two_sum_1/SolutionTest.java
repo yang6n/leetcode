@@ -61,13 +61,13 @@ public class SolutionTest {
 
         target = 6;
         actual = solution.twoSum(new int[]{1, 2, 3, 4, 5}, target);
-        Assert.assertThat(actual[0], CoreMatchers.is(0));
-        Assert.assertThat(actual[1], CoreMatchers.is(4));
+        Assert.assertThat(actual[0], CoreMatchers.is(1));
+        Assert.assertThat(actual[1], CoreMatchers.is(3));
 
         target = 7;
         actual = solution.twoSum(new int[]{1, 2, 3, 4, 5}, target);
-        Assert.assertThat(actual[0], CoreMatchers.is(1));
-        Assert.assertThat(actual[1], CoreMatchers.is(4));
+        Assert.assertThat(actual[0], CoreMatchers.is(2));
+        Assert.assertThat(actual[1], CoreMatchers.is(3));
 
         target = 10;
         actual = solution.twoSum(new int[]{1, 2, 3, 4, 5, 6}, target);
