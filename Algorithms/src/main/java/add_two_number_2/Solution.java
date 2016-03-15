@@ -5,40 +5,25 @@ package add_two_number_2;
  */
 public class Solution {
     public ListNode addTwoNumbers(ListNode list1, ListNode list2) {
-        if (list1 == null || list2 == null) return null;
+        ListNode list1Node = list1, list2Node = list2, result = new ListNode(0), node = result;
 
         boolean carry = false;
-        int val = list1.val + list2.val;
-
-        if (val >= 10) {
-            carry = true;
-            val %= 10;
-        }
-
-        ListNode result = new ListNode(val);
-        result.val = val;
-        ListNode node = result;
-
-        ListNode list1Node = list1.next;
-        ListNode list2Node = list2.next;
+        int val;
 
         while (true) {
-            if (list1Node == null && list2Node == null) {
-                break;
-            }
+            if (list1Node == null && list2Node == null) break;
 
             val = (list1Node == null ? 0 : list1Node.val) + (list2Node == null ? 0 : list2Node.val);
             if (carry) val += 1;
 
             if (val >= 10) {
                 carry = true;
-                val %= 10;
+                val -= 10;
             } else {
                 carry = false;
             }
 
-            node.next = new ListNode(val);
-            node = node.next;
+            node = node.next = new ListNode(val);
             node.val = val;
 
             list1Node = (list1Node == null) ? null : list1Node.next;
@@ -50,6 +35,6 @@ public class Solution {
             node.next.val = 1;
         }
 
-        return result;
+        return result.next;
     }
 }
