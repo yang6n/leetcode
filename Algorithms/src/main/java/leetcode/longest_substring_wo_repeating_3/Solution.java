@@ -1,4 +1,4 @@
-package longest_substring_wo_repeating_3;
+package leetcode.longest_substring_wo_repeating_3;
 
 /**
  * Created by Jian on 3/7/2016.

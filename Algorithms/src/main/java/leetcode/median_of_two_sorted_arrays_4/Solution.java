@@ -1,4 +1,4 @@
-package median_of_two_sorted_arrays_4;
+package leetcode.median_of_two_sorted_arrays_4;
 
 /**
  * Created by Jian Yang on 3/15/16.

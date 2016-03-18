@@ -1,4 +1,4 @@
-package two_sum_1;
+package leetcode.two_sum_1;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;

@@ -1,4 +1,4 @@
-package median_of_two_sorted_arrays_4;
+package leetcode.median_of_two_sorted_arrays_4;
 
 import org.junit.Before;
 import org.junit.Test;

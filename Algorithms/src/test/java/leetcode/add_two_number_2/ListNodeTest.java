@@ -1,4 +1,4 @@
-package add_two_number_2;
+package leetcode.add_two_number_2;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;

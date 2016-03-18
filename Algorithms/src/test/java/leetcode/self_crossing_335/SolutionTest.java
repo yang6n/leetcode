@@ -1,4 +1,4 @@
-package self_crossing_335;
+package leetcode.self_crossing_335;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
